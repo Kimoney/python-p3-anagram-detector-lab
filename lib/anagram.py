@@ -25,8 +25,9 @@ class Anagram:
         for i in anagrams:
             if (sorted(i.lower()) == input_word and i.lower() != self.word.lower()):
                 matched_list.append(i)
+        print(matched_list)
         return matched_list
 
-mine = Anagram("are")
+mine = Anagram("rae")
 print(mine.word)
 mine.match(anagrams)
